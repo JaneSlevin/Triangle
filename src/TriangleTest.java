@@ -10,7 +10,7 @@ public class TriangleTest {
   static TriangleType isosceles = TriangleType.ISOSCELES;
   static TriangleType invalid = TriangleType.INVALID;
 
-    @Test
+  @Test
   public void test1() {
     final TriangleType type = Triangle.classify(1, 2, 3);
     assertEquals(scalene, type);
@@ -82,5 +82,5 @@ public class TriangleTest {
     final TriangleType type = Triangle.classify(3, 1, 1);
     assertEquals(invalid, type);
   }
-    
+
 }
